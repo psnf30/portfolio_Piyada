@@ -424,5 +424,60 @@ footer{
 .hero-text h2{font-size:1.6rem;font-weight:500;margin-bottom:1.2rem}
 .hero-text .desc{font-size:.95rem;color:var(--subtext)}
 
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background:
+    repeating-linear-gradient(0deg ,transparent 0 98px,rgba(244,197,49,.05) 100px),
+    repeating-linear-gradient(90deg,transparent 0 98px,rgba(244,197,49,.05) 100px);
+  background-size:200px 200px;
+  animation:bgmove 25s linear infinite;
+}
 
+/* เคลื่อนกริดช้าๆ ให้มีมิติ */
+@keyframes bgmove{
+  from{background-position:0 0,0 0;}
+  to  {background-position:-200px -200px,200px 200px;}
+}
 
+/* ===== Lanyard container ===== */
+.lanyard{
+  position:fixed;
+  top:80px;            /* ระยะจากขอบบน (หลบ navbar) */
+  left:calc(50% - 60px);/* กึ่งกลางจอ (60px คือครึ่งความกว้างป้าย) */
+  width:120px;
+  animation:swing 3.8s ease-in-out infinite alternate;
+  transform-origin:50% -60px;   /* จุดหมุนเหนือป้าย (โฮล) */
+  z-index:900;        /* หน้า content แต่หลัง navbar */
+}
+
+/* === Badge swing (รูปเดียวจบ) ===================== */
+.swing-badge{
+  position:fixed;
+  top:50px;              /* ปรับตำแหน่งตามต้องการ */
+  right:300px;
+  width:200px;           /* กว้างป้าย (เท่ารูป)      */
+  transform-origin:50% 0;/* หมุนจากจุดบนสุดของรูป   */
+  animation:swing 4s ease-in-out infinite alternate;
+  z-index:900;
+}
+.swing-badge img{
+  width:100%;
+  height:auto;
+  display:block;
+  pointer-events:none;   /* คลิกทะลุ */
+}
+
+/* แอนิเมชันแกว่ง */
+@keyframes swing{
+  0%   {transform:rotate(-6deg);}
+  50%  {transform:rotate( 4deg);}
+  100% {transform:rotate(-6deg);}
+}
+
+/* ซ่อนป้ายบนจอเล็ก (เลือกได้) */
+@media(max-width:640px){
+  .swing-badge{display:none;}
+}
