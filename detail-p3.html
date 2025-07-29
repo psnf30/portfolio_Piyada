@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Piyada · Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="portfolio.html" class="back-btn">← Back</a>
+</header>
+
+<main class="detail-wrapper">
+
+  <small class="breadcrumb">Portfolio / Machine Learning & Neural Network Web Application</small>
+
+  <!-- ===== HERO ROW ===== -->
+  <!-- ===== HERO (Text + Gallery) ===== -->
+<section class="detail-hero box">
+  <!-- คำอธิบายด้านบน -->
+  <div class="hero-text">
+    <h1>Machine Learning & Neural Network Web Application</h1>
+    <p class="lead">
+      ระบบนี้พัฒนาโมเดล Machine Learning และ Neural Network เพื่อจำแนกคุณภาพอากาศและผลไม้จากข้อมูล
+ใช้ Google Colab สำหรับเทรนโมเดล และ Streamlit สร้าง Web App ให้ผู้ใช้ทำนายผลได้
+ผู้ใช้สามารถอัปโหลดข้อมูล แล้วระบบจะแสดงผลลัพธ์การทำนายพร้อมกราฟวิเคราะห์
+    </p>
+    <a href="https://is-project-piyada-suknimit.streamlit.app/?fbclid=IwY2xjawL1RrFleHRuA2FlbQIxMQABHpAMZByXD2pvJ1XdZto210f63ZliRbSA_s1uRae0gePN_hk3QlZTopmTqg9x_aem_5cUXT4znPgfcJP8EHJ86XQ" class="btn hollow">View ➜</a>
+
+    <div class="pill-group">
+      <span class="pill">3 Technologies</span>
+      <span class="pill">5 Features</span>
+    </div>
+
+  </div>
+
+  <!-- แกลเลอรี 3 รูป -->
+  <div class="hero-gallery">
+    <img src="images/big3-1.jpg" alt="">
+    <img src="images/big3-2.jpg" alt="">
+    <img src="images/big3-3.jpg" alt="">
+    <img src="images/big3-4.jpg" alt="">
+    <img src="images/big3-5.jpg" alt="">
+    <img src="images/big3-6.jpg" alt="">
+  </div>
+</section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="detail-section box">
+    <h3>Key Features</h3>
+    <ul class="bullet">
+      <li>ทำนายคุณภาพอากาศ ด้วย SVM & Random Forest</li>
+      <li>จำแนกผลไม้ ด้วย Neural Network (MLP)</li>
+      <li>โหลดโมเดลจาก .pkl โดยไม่ต้องเทรนใหม่</li>
+      <li>แสดงผลลัพธ์/กราฟ แบบโต้ตอบผ่านเว็บ</li>
+      <li>รองรับการอัปโหลด CSV เพื่อใช้งานโมเดล</li>
+    </ul>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section class="detail-section box">
+    <h3>Technologies Used</h3>
+    <div class="tech-grid">
+      <span class="tech">Google Colab</span>
+      <span class="tech">Python</span>
+      <span class="tech">Streamlit</span>
+    
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Piyada Suknimit · All rights reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>

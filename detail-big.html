@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Piyada · Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="portfolio.html" class="back-btn">← Back</a>
+</header>
+
+<main class="detail-wrapper">
+
+  <small class="breadcrumb">Portfolio / Clean Water Monitoring</small>
+
+  <!-- ===== HERO ROW ===== -->
+  <!-- ===== HERO (Text + Gallery) ===== -->
+<section class="detail-hero box">
+  <!-- คำอธิบายด้านบน -->
+  <div class="hero-text">
+    <h1>Clean Water Monitoring (FYP)</h1>
+    <p class="lead">
+      Clean Water Monitoring เป็นระบบตรวจสอบคุณภาพน้ำด้วย IoT โดยใช้เซ็นเซอร์วัดค่า pH, TDS, Turbidity และ Temperature ส่งข้อมูลแบบเรียลไทม์ผ่าน MQTT ไปยัง Firebase เพื่อให้ผู้ใช้สามารถดูจุดตรวจบนแผนที่ ค้นหาจุดใกล้ตัว และแจ้งปัญหา พร้อมให้แอดมินหรือเจ้าหน้าที่จัดการจุดตรวจ อัปโหลดผลวิเคราะห์จากแล็บ ตรวจสอบ log และควบคุมระบบทั้งหมดผ่านเว็บแอปที่พัฒนาโดยใช้ React, Node.js และ Firebase พร้อมระบบความปลอดภัยผ่าน JWT, CSRF, CORS และ Helmet.
+    </p>
+
+    <div class="pill-group">
+      <span class="pill">5 Technologies</span>
+      <span class="pill">8 Features</span>
+    </div>
+
+  </div>
+
+  <!-- แกลเลอรี 3 รูป -->
+  <div class="hero-gallery">
+    <img src="images/big-1.jpg" alt="">
+    <img src="images/big-2.jpg" alt="">
+    <img src="images/big-3.jpg" alt="">
+    <img src="images/big-4.jpg" alt="">
+    <img src="images/big-5.jpg" alt="">
+    <img src="images/big-6.jpg" alt="">
+  </div>
+</section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="detail-section box">
+    <h3>Key Features</h3>
+    <ul class="bullet">
+      <li>Real-time dashboard with Chart.js</li>
+      <li>Threshold e-mail & LINE alerts</li>
+      <li>Historical data export (CSV)</li>
+      <li>Admin role-based management</li>
+    </ul>
+  </section>
+
+  <!-- ===== TECH STACK ===== -->
+  <section class="detail-section box">
+    <h3>Technologies Used</h3>
+    <div class="tech-grid">
+      <span class="tech">React</span>
+      <span class="tech">Node.js</span>
+      <span class="tech">MQTT</span>
+      <span class="tech">Firebase</span>
+      <span class="tech">Chart.js</span>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Your Name · All rights reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>

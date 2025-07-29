@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Piyada · Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <div class="brand">piyada();</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+    
+    </ul>
+  </nav>
+</header>
+
+<main style="padding-top:80px">
+  <section class="portfolio box">
+    <h2>Portfolio</h2>
+
+    <!-- คอนเทนเนอร์ช่วยยืดห่างขอบ -->
+    <div class="portfolio-container">
+      <div class="card-grid">
+
+        <!-- Big project -->
+        <article class="card big">
+          <img src="images/big-project.jpg" alt="Big project">
+          <div class="info">
+            <h3>Clean Water Monitoring (FYP)</h3>
+            <p>React • Chart.js • MQTT • Firebase</p>
+            <div class="btn-group">
+              <a href="detail-big.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Small projects -->
+        <article class="card">
+          <img src="images/p1.jpg" alt="">
+          <div class="info">
+            <h3>Stock Management System</h3>
+            <p>Figma • Adobe XD</p>
+            <div class="btn-group">
+              <a href="detail-p1.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/p2.jpg" alt="">
+          <div class="info">
+            <h3>Hotel Room Reservation System</h3>
+            <p>php • JavaScript • MySQL</p>
+            <div class="btn-group">
+              <a href="detail-p2.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/p3.jpg" alt="">
+          <div class="info">
+            <h3>Machine Learning & Neural Network Web Application</h3>
+            <p>Python • Google Colab • Streamlit</p>
+            <div class="btn-group">
+              <a href="detail-p3.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+
+        
+
+    
+        <article class="card">
+          <img src="images/p4.jpg" alt="">
+          <div class="info">
+            <h3>Booking Queue</h3>
+            <p>figma</p>
+            <div class="btn-group">
+              <a href="detail-p4.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/p5.jpg" alt="">
+          <div class="info">
+            <h3>ระบบเรียนคอร์สออนไลน์</h3>
+            <p>figma</p>
+            <div class="btn-group">
+              <a href="detail-p5.html" class="btn hollow">Detail ➜</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Piyada Suknimit · All rights reserved</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Piyada · Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">piyada();</div>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main style="padding-top:80px">
+  <section class="contact box">
+    <div class="contact-grid">
+      <!-- ===== text left ===== -->
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p><strong>Address:</strong><br>
+          14/230 Vista Avenue Village,<br>
+          Nong Khaem, Bangkok, Thailand
+        </p>
+
+        <p><strong>Phone:</strong><br>
+          <a href="tel:+66971038754">097 103 8754</a>
+        </p>
+
+        <p><strong>E-mail:</strong><br>
+          <a href="mailto:piyada.psm@gmail.com">piyada.psm@gmail.com</a>
+        </p>
+      </div>
+
+      <!-- ===== image right ===== -->
+      <div class="contact-img">
+        <img src="images/contact-banner.jpg" alt="contact banner">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> Piyada Suknimit · All rights reserved</footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
